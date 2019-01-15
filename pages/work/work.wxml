@@ -1,0 +1,56 @@
+<view class="body">
+    <view class='content'>
+    <form bindsubmit="formSubmit">
+      <input name="work_id" value='{{data.work_id}}' style='display:none;'/>
+       <view class='select'>
+            <view class='left'>公司名称</view>
+            <view class='center'><input maxlength="50" value='{{data.company}}' name="company" placeholder-class="phcolor" placeholder="请输入" auto-focus/></view>
+            <view class='right'></view>
+        </view>
+
+
+       <view class='select'>
+            <view class='left'>你的职位</view>
+            <view class='center'><input maxlength="50" value='{{data.position}}' placeholder-class="phcolor" name="position" placeholder="请输入"/></view>
+            <view class='right'></view>
+        </view>
+
+        <view class='select' style='border:none;'>
+            <view class='left'>入职时间</view>
+            <picker  mode="multiSelector" range="{{workstartarray}}" bindchange="workstart" >
+            <view class='center'>
+              <input placeholder-class="phcolor" placeholder="请选择" value='{{startdate||data.startdate}}' disabled="true" name="starttime"/>
+            </view>
+            <view class='right'> <image class='rightimg' mode='widthFix' src="{{iconpath}}right.png"></image></view>
+            </picker>
+        </view>
+
+
+        <view class='select' style='border:none;'>
+            <view class='left'>离职时间</view>
+             <picker bindchange="workstop"  mode="multiSelector" range="{{workstartarray}}">
+            <view class='center'>
+              <input placeholder-class="phcolor" placeholder="请选择" value='{{stopdate||data.stopdate}}' disabled="true" name="stoptime"/>
+            </view>
+            <view class='right'><image class='rightimg' mode='widthFix' src="{{iconpath}}right.png"></image></view>
+            </picker>
+        </view>
+
+
+      <view class='introduction'>
+          <view class='title'><view>工作业绩</view></view>
+          <textarea placeholder="请输入工作内容" maxlength="500" name="results" value='{{data.results}}' bindinput="textchange"></textarea>
+           <view class='len'>{{textlen}}/500</view>
+      </view>
+
+         <view class='btop'>
+            <button form-type="submit" class='button'>保存</button>
+             <view wx:if="{{data.work_id&&data.count > 1}}" data-id='{{data.work_id}}' class='del' bindtap='del'>删除此工作经历</view>
+        </view> 
+
+       </form>
+        
+    </view>
+</view>
+
+  

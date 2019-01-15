@@ -1,0 +1,173 @@
+
+
+
+/* 手机号码登陆 */
+.content text{
+  display: block;
+  width: 94%;
+  margin:0 auto;
+	height: 38rpx;
+	font-family: SourceHanSansCN-Medium;
+	font-size: 40rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 38rpx;
+	letter-spacing: 0rpx;
+  padding-top: 74rpx;
+  padding-bottom: 74rpx;
+	color: #353535;
+}
+/* 横线 */
+.border{
+  background: #e5e5e5;
+  width: 100%;
+  height: 1rpx;
+  margin-top:5rpx;
+  margin-bottom:5rpx;
+  clear:both;
+}
+
+/* 手机号 */
+.mobile{
+  height: 74rpx;
+  line-height: 74rpx;
+  /* border-bottom: 1rpx solid #e5e5e5; */
+  width: 94%;
+   margin:0 auto;
+}
+
+.mobileicon{
+  width: 6%;
+  height: 74rpx;
+   /* height: 25rpx; */
+  float: left;
+  /* margin-right:  */
+}
+.mobileicon image{
+  width:21rpx;
+  /* height: 20rpx; */
+}
+.mobile_{
+  width:auto;
+  width: 94%;
+  height: 74rpx;
+  float:left;
+  line-height: 74rpx;
+}
+
+.mobile_ input{
+  width: 100%;
+  height: 25rpx;
+  margin-top: 12rpx;
+  font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #000;
+  
+}
+.phcolor{
+	color: #b2b2b2;
+
+}
+
+input[name="code"],input[name="code2"]{
+  width:60%;
+  float:left;
+
+  
+}
+.yzm{
+  display: block;
+  height: 70rpx;
+  width:40%;
+   float:right; 
+     text-align: right;
+}
+.mobile_ button{
+  width:40%;
+  height: 70rpx;
+  float:right;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 70rpx;
+	color: #b2b2b2; 
+  border: none;
+  background: #fff;
+    text-align: right;
+}
+button::after{ border: none; }
+.submit{
+  width:95%;
+  height: 74rpx;
+	background-color: #6ac4d2;
+	border-radius: 10rpx;
+  margin-top: 74rpx;
+ line-height: 74rpx;
+	font-size: 36rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	color: #ffffff;
+  
+}
+checkbox .wx-checkbox-input{
+   /* border-radius: 50%;圆角 */
+   width: 21rpx; /* 背景的宽 */
+   /* height: 30rpx; 背景的高 */
+   height: 21rpx;
+}
+
+/* 用户协议 */
+.agreement{
+  width:100%;
+  margin:0 auto;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:#fff;
+  z-index: 999;
+  overflow:scroll
+}
+.agreement view{
+  width:94%;
+  height: auto;
+  margin:0 auto;
+  text-align: justify;
+  
+}
+.agreement .title{
+  width: 100%;
+  height: 50rpx;
+  text-align: center;
+  	font-size: 36rpx;
+	font-weight: normal;
+	font-stretch: normal;
+}
+.agreement text{
+  overflow:none;
+  white-space:normal;
+  text-overflow : clip; 
+  font-size: 26rpx;
+  text-align: justify;
+  
+}
+
+.quren{
+  width:100%;
+  position: fixed;
+  margin:0 auto;
+  bottom: 0;
+  height: 74rpx;
+	background-color: #6ac4d2;
+	/* border-radius: 10rpx; */
+ line-height: 74rpx;
+	font-size: 36rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	color: #ffffff;
+text-align: center;
+}

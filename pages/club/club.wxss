@@ -1,0 +1,146 @@
+
+.clear{
+  clear:both;
+}
+.club_info{
+  width:100%;
+}
+
+.club_info_list{
+  /* height:190rpx; */
+  padding:40rpx 0rpx;
+  border-bottom:1rpx solid #e5e5e5;
+}
+.club_info_list .left{
+  width:25%;
+  float:left;
+  margin-top:10rpx;
+}
+.left_bor{
+  width:140rpx;
+  height:140rpx;
+  margin:0 auto;
+}
+.club_info_img{
+  width:100%;
+  float:right;
+  /* height:140rpx; */
+}
+.club_info_list .center{
+  width:60%;
+  float:left;
+  /* margin-left:2.5%; */
+  font-family: SourceHanSansCN-Regular;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #d6d6d6;
+}
+.club_name{
+  color:#000000;
+  font-size: 34rpx;
+}
+.right{
+  float:right;
+  width:10%;
+}
+.region{
+  margin-top: 20rpx;
+  font-size: 26rpx;
+}
+.works_num{
+  color:#6ac4d2;
+  margin-top: 20rpx;
+}
+
+/* 跳转箭头 */
+.detail_arror {
+  width:16rpx;
+  height:16rpx;
+  margin-top: 70rpx;
+}
+
+.line{
+  width:100%;
+  height: 1px;
+  background:#b4b4b4;
+  position:fixed;
+  bottom: 0rpx;
+}
+.top{
+  width:100%;
+  position:relative;
+}
+.top image{
+  width:100%;
+  height:550rpx!important;
+}
+.contant{
+  width:100%;
+  margin-top: 30rpx;
+}
+.section{
+  width:80%;
+  margin:0 auto;
+  margin-top: 25rpx;
+  height:80rpx;
+  border:1px solid #ccc;
+}
+.section input{
+  font-size: 24rpx;
+}
+.picker{
+  width:90%;
+  padding: 0 5%;
+  height:80rpx;
+  line-height: 80rpx;
+}
+
+.submit{
+  width:80%;
+  margin:0 auto;
+  margin-top:40rpx;
+  background-color: #FF6700;
+  color:#fff;
+  font-size: 30rpx;
+  height:80rpx;
+  line-height:80rpx;
+}
+.title{
+  display:block;
+  margin-top:30rpx;
+  width:100%;
+  text-align: center;
+  font-size: 40rpx;
+  color:#FF6700;
+}
+.form-container{
+  margin-top: 30rpx;
+}
+.pic-content{
+  position:absolute;
+  width:80%;
+  top:150rpx;
+  left:0;
+  right:0;
+  margin:0 auto;
+}
+.pic-content-title text{
+  display:block;
+  width:100%;
+  font-size: 58rpx;
+  text-align: center;
+  color:#fff;
+}
+.pic-content-sec{
+  margin-top:50rpx;
+}
+.pic-content-sec text{
+  text-align: center;
+  display:block;
+  width:100%;
+  font-size: 24rpx;
+  color:#fff;
+  margin-top:15rpx;
+}

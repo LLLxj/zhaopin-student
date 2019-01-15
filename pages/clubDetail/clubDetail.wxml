@@ -1,0 +1,121 @@
+<!--enterprise/clubDetail/clubDetail.wxml-->
+<!--job/club1/club1.wxml-->
+<!--俱乐部详情-->
+<view class="body">
+
+    <!-- 头部公司照片 -->
+    <view class="club_img_info">
+      <view class="club_img_bor">
+        <image class="club_bac" mode='widthFix'  src="{{data.banner}}"></image>
+      </view>
+      
+      <!-- <view class="club_logo_and_name"> -->
+      <image class="club_logo" src="{{data.logo}}"></image>
+      <view class="club_name">{{companyname}}</view>
+      <!-- </view> -->
+    </view>
+
+
+    <!-- 导航切换按钮 -->
+    <view class="navbar">
+      <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}} test-item" wx:key="unique"   bindtap="navbarTap">{{item}}</text>
+    </view>
+
+
+    <view class='centent' hidden="{{currentTab!==0}}">
+
+        <!-- 分割线 -->
+        <view class='hr'></view>
+
+        <!-- 公司简介 -->
+        <view class='dali'>
+          <view class='title'>
+            <view class='left'>
+              <image mode='widthFix' src='{{iconpath}}yundian.png'></image>
+            </view> 
+            <view class='right'>公司简介</view> 
+          </view>
+
+          <text class='text' space="emsp">
+{{data.introduction}}
+          </text>
+        </view>
+        <!-- 分割线 -->
+        <view class='hr'></view>
+
+
+        <!-- 职位详情 -->
+        <view class='dali'>
+          <view class='title'>
+            <view class='left'>
+            <image mode='widthFix' src='{{iconpath}}yundian.png'></image>
+            </view> 
+            <view class='right'>公司地址</view> 
+          </view>
+          <view class='map'>
+          <!-- <view class='left'>
+              <image mode='widthFix' src='{{iconpath}}map.png'></image>
+          </view> -->
+            <view class='right'>
+              <view class='text' bindtap='mymap' data-location='{{data.location}}' data-title="{{}}" wx:key="unique">
+                {{data.address}}
+                <text class='show' style='color:#6ac4d2;'>查看地图</text>
+                </view>
+            </view>
+          </view>
+        </view>
+  <!-- 分割线 -->
+        <view class='hr'></view>
+
+        <!-- 公司相册 -->
+        <view class='dali photo' wx:if="{{data.thumb}}">
+          
+            <view class='title'>
+              <view class='left'>
+                <image mode='widthFix' src='{{iconpath}}yundian.png'></image>
+              </view> 
+              <view class='right'>公司相册</view> 
+            </view>
+            <view class='body'>
+              <view class='list' wx:for="{{data.thumb}}"  wx:key="unique">
+                <image mode='widthFix' src="{{item}}" bindtap='delimage' data-src="{{data.photo[index]}}" ></image>
+              </view>
+            </view>
+  
+        </view>
+        <!-- 分割线 -->
+        
+    
+    </view>
+
+
+    <view class="list-bor">
+    
+      <view class='list' hidden="{{currentTab!==1}}" wx:for="{{data1}}" bindtap="url" data-id='{{item.recruitment_id}}' wx:key="unique">
+        <view class='content'>
+          <view class='top'>
+            <view class='left'>{{item.position}}</view>
+            <view class='right'>{{item.salary}}</view>
+          </view>
+          <view class='centent employee'>
+              <view class='left'>{{item.cityname}} | {{item.experience}} | {{item.degree}}</view>
+              <view class='right'>{{item.number}}人</view>
+          </view>
+          <view class='bottom'>
+            <view class='logo'><image mode='widthFix' src='../../images/com_l.png'></image></view>
+            <view class='cname'>{{companyname}}</view>
+          </view>
+        </view>
+      </view>
+
+        <!-- <view class='prompt' style='display:{{prompt_display}}'> {{prompt_msg}} </view> -->
+      <view class='prompt' wx:if="{{currentTab==1}}" style='display:{{prompt_display}}'>{{prompt_msg}}</view> 
+      <!-- 底线 -->
+      <!-- <view class='line'></view> -->
+    </view>
+    
+  
+    
+
+       
+</view>

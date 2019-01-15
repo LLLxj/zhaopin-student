@@ -1,0 +1,119 @@
+.list{
+  width:100%;
+  height: 204rpx;
+  border-bottom: 1rpx solid #d6d6d6;
+  
+}
+.list>.content{
+  width:94%;
+  height: 122rpx;
+  margin:0 auto;
+  background: #fff;
+   margin-top: 41rpx; 
+}
+.list>.content>.left{
+  width:20%;
+  height: 122rpx;
+  float:left;
+}
+.list>.content>.left image{
+  width:122rpx;
+  /* height: 122rpx; */
+  
+}
+
+.list>.content>.center{
+  width:50%;
+  height: 122rpx;
+  float:left;
+}
+
+.center>view{
+width: 100%;
+height: 33.33%;
+}
+
+.center>.ctop{
+  font-family: SourceHanSansCN-Regular;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #000000;
+  /* line-height: 100rpx; */
+}
+.center>.ccenter{
+  font-family: SourceHanSansCN-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 56rpx;
+	letter-spacing: 0rpx;
+	color: #d6d6d6;
+}
+.center>.cbottom{
+  font-family: ArialMT;
+	font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #6ac4d2;
+  line-height: 55rpx;
+}
+
+.list>.content>.right{
+  width:30%;
+  height: 122rpx;
+  float:left;
+}
+
+.list>.content>.right>view{
+  width:100%;
+  height: 50%;
+  text-align: right;
+}
+.list>.content>.right>.rtop{
+  font-family: SourceHanSansCN-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 37rpx;
+	letter-spacing: 0rpx;
+	color: #d6d6d6;
+  
+}
+
+.list>.content>.right>.rbottom{
+  font-family: SourceHanSansCN-Regular;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #6ac4d2;
+  text-align: right;
+  
+}
+
+.zj-content{
+  background: #fbfafa;
+}
+.content_{
+  width: 94%;
+  /* height: 556rpx; */
+  margin: 0 auto;
+  margin-top: 100rpx;
+  text-align: center;
+}
+.content_ image{
+  width: 90%;
+}
+.content_ text{
+  display: block;
+  margin-top: 34rpx; 
+  font-family: SourceHanSansCN-Regular;
+	font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #888888;
+}

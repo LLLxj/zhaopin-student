@@ -1,0 +1,77 @@
+<view class='body'>
+  <view class='content'>
+
+      <view class='top'>
+        <view class='info'>
+          <view class='left'>
+            <text style='margin-top:30rpx'>{{userInfo['username']||'点击登录'}}</text>
+            <text class='p' wx:if="{{userInfo}}" >点击头像可查看个人信息</text>
+            <text class='p' wx:else>点击头像即可登录</text>
+          </view>
+          <view class='right'>
+            <image mode='cover' wx:if="{{userInfo}}" bindtap='myresume' src="{{userInfo['icon']}}"></image>
+            <button open-type="getUserInfo" wx:else lang="zh_CN" class='getuserinfo' bindgetuserinfo="onGotUserInfo" bindtap="onGotUserInfo"><image mode='cover' src="{{iconpath}}userpic.png"></image></button>
+          </view>
+        </view>
+      </view>
+
+      <!-- 分割 -->
+      <!-- <view class='hr'></view> -->
+
+      <!--  -->
+
+      <view class='nav'>
+        <view class='nav_' bindtap='myresume' wx:if="{{internal == 1}}">
+          <view class='left'><image mode='widthFix' src='../../images/ujl.png'></image></view>
+          <view class='centen'>我的简历</view>
+          <view class='right'><image src='../../images/right.png' mode='widthFix'></image></view>
+        </view>
+
+
+        <view class='hr2' wx:if="{{internal == 1}}"></view> 
+          <view class='nav_' bindtap='deliverylog' wx:if="{{internal == 1}}">
+              <view class='left'><image mode='widthFix' src='../../images/utl.png'></image></view>
+              <view class='centen'>投递记录</view>
+              <view class='right'><image src='../../images/right.png' mode='widthFix'></image></view>
+          </view>
+          <view class='hr2' wx:if="{{internal == 1}}"></view>
+        
+          <view class='nav_' bindtap='feedback'>
+            <view class='left'><image mode='widthFix' src='../../images/ufk.png'></image></view>
+            <view class='centen'>意见反馈</view>
+            <view class='right'><image src='../../images/right.png' mode='widthFix'></image></view>
+          </view>
+          <view class='hr2'>
+        
+        </view>
+        
+      </view>
+
+      <view class='hr' wx:if="{{internal == 1}}"></view>
+      <!-- 我要招人 -->
+      <!-- <view class='zhaoren' wx:if="{{userInfo}}" bindtap='enterprise'>
+        切换至我要招人
+      </view> -->
+      <view class='unlogin' bindtap='unlogin' wx:if="{{userInfo}}">退出登录</view>   
+  </view>
+
+  <view class="zj-cover" wx:if="{{showOrDisplay}}" style="width:{{width}}px;height:{{height}}px">
+    <!-- 选择登录模式 -->
+    <view class="zj-choose-login">
+
+      <view class="zj-cancle-login"  bindtap="calcleLogin">
+        <image src="../../images/cancle.png"></image>
+        <view class="clear"></view>
+      </view>
+
+      <text class="zj-login-style">登录方式</text>
+
+
+      <view class="zj-wechat-login" bindgetuserinfo="getUserInfo">
+        <image src="../../images/wechat.png"></image>
+        <text>微信账号登录</text>
+        <button open-type="getPhoneNumber" class="getUserInfo" bindgetphonenumber="getPhoneNumber">获取用户手机号</button>
+      </view>
+    </view>
+  </view>
+</view>

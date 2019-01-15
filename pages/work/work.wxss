@@ -1,0 +1,165 @@
+
+
+.phcolor{
+  text-align: right;
+  margin-right: 50rpx;
+}
+
+
+.select{
+  width:94%;
+  height: 87rpx;
+  margin: 0 auto;
+  border-bottom: 1rpx solid #e5e5e5;
+  background: #fff;
+}
+
+.select .left{
+  width:25%;
+  height: 87rpx;
+  float: left;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #000000;
+  line-height: 87rpx;
+  
+}
+.select .center{
+  width: 68%;
+  height: 87rpx;
+  /* text-align: right; */
+  font-family: SourceHanSansCN-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #9b9b9b;
+  line-height: 87rpx;
+  float: left;
+}
+.select .center input{
+  font-family: SourceHanSansCN-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #000;
+  width: 100%;
+  height: 87rpx;
+  text-align: right;
+}
+
+
+.select .right{
+  width: 7%;
+  height: 87rpx;
+  float: right;
+  text-align: right;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 36rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #9b9b9b;
+  line-height: 87rpx;
+}
+
+.btop{
+  position:relative;
+  width: 100%;
+  max-height: 100%;
+  background: #fbfafa;
+  top: 0rpx;
+  left: 0rpx;
+  right: 0rpx;
+  bottom: 0rpx;
+}
+
+
+.introduction{
+  width: 100%;
+  height: auto;
+  line-height: 35rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+  
+  
+}
+
+.introduction .title{
+  width: 100%;
+  height: 93rpx;
+  background: #fbfafa;
+}
+
+.introduction .title>view{
+  width: 94%;
+  height: 93rpx;
+  margin:0 auto;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 28rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #888888;
+  line-height: 120rpx;
+}
+
+.introduction textarea{
+  width: 94%;
+  height: 338rpx;
+  margin:0 auto;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #000;
+  margin-top: 30rpx;
+}
+
+.len{
+  width: 94%;
+  height: 50rpx;
+  margin: 0 auto;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 24rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #9b9b9b;
+  text-align: right;
+
+}
+
+.button{
+  width: 94%;
+	height: 88rpx;
+  margin:0 auto;
+	background-color: #6ac4d2;
+	border-radius: 10px;
+  margin-top: 50rpx;
+  text-align: center;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 36rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #ffffff;
+  line-height: 88rpx;
+}
+
+.del{
+  width: 100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 30rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #b2b2b2;
+}

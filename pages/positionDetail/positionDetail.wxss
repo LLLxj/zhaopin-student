@@ -1,0 +1,222 @@
+.top{
+  width: 94%;
+	height: 170rpx;
+	background-color: #fff;
+  margin:0 auto;
+}
+
+.top>view{
+  width:100%;
+  height: 50%;
+}
+
+.top .top_{
+  line-height: 100rpx;
+}
+.top .bottom_{
+  line-height: 50rpx;
+}
+.top>view .left{
+  width:70%;
+  height: 100%;
+  float:left;
+}
+.top>view .right{
+  width:30%;
+  height: 100%;
+  float:right;
+}
+
+.top .top_ .left{
+  font-family: SourceHanSansCN-Medium;
+	font-size: 42rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #000000;
+}
+.top .top_ .right{
+  font-family: ArialMT;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #6ac4d2;
+  text-align: right;
+}
+
+
+.top .bottom_ .left{
+  font-family: SourceHanSansCN-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #d6d6d6;
+}
+.top .bottom_ .right{
+  font-family: ArialMT;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #e42387;
+  text-align: right;
+}
+
+.hr{
+  width:100%;
+  height: 10rpx;
+  background:#fafafa;
+}
+
+.dali{
+  width:94%;
+  height: auto;
+  background:#fff;
+  margin:0 auto;
+}
+
+.dali .title{
+  width:100%;
+  height: 32rpx;
+  background:#fff;
+  line-height: 32rpx;
+  margin-top: 48rpx;
+}
+.dali .title .left{
+  width:5%;
+  height: 32rpx;
+  float:left;
+}
+.dali .title .left image{
+  width:6rpx;
+}
+
+.dali .title .right{
+  width:95%;
+  height: 32rpx;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #000000;
+}
+
+.dali .text{
+  width:100%;
+  height: auto;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	 line-height: 30rpx; 
+	color: #9b9b9b;
+   overflow:none;
+  white-space:normal;
+  text-overflow : clip; 
+}
+.dali .map view{
+  height: auto;
+  float: left;
+}
+
+.dali .map .left{
+  width:5%;
+}
+.dali .map .right{
+  width:95%;
+}
+.dali .map .right text{
+   width:100%;
+  height: auto;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	 line-height: 30rpx; 
+	color: #9b9b9b;
+   overflow:none;
+  white-space:normal;
+  text-overflow : clip; 
+}
+.dali .map .right .text{
+  width:100%;
+  height: auto;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	 line-height: 35rpx; 
+	color: #9b9b9b;
+   overflow:none;
+  white-space:normal;
+  text-overflow : clip; 
+  padding-bottom: 48rpx;
+  padding-top: 48rpx;
+  text-align: left;
+}
+
+
+
+.show{
+color:#6ac4d2;
+}
+
+.dali .map .left image{
+  width: 15rpx;
+   line-height: 30rpx;
+   display: inline-block;
+   margin-top: 72rpx;
+}
+.dali .map .text{
+  
+  width:100%;
+  height: auto;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	 line-height: 30rpx; 
+	color: #9b9b9b;
+   overflow:none;
+  white-space:normal;
+  text-overflow : clip; 
+}
+
+.button{
+  width: 100%;
+	height: 88rpx;
+	background-color: #f00;
+	/* border-radius: 10rpx; */
+   position:fixed; 
+  z-index: 999;
+  bottom: 0rpx;
+  text-align: center;
+  line-height: 88rpx;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 36rpx;
+	font-weight: normal;
+	font-stretch: normal;
+}
+
+.photo .body{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-top:48rpx;
+}
+.photo .body .list{
+  width: 33.33%;
+  height: 224rpx;
+  float: left;
+   text-align: center; 
+  margin-top: 10rpx;
+  /* margin-left: 2%; */
+}
+
+.photo .body .list image{
+  width: 97%;
+}
+

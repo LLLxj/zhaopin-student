@@ -1,0 +1,384 @@
+ .content{
+   /* background: #fbfafa;  */
+   height: 100%;
+   position: fixed;
+   /* background: #eee; */
+ }  
+.top{
+  width: 100%;
+	height: 248rpx;
+	 background-color: #454550; 
+}
+
+.top .info{
+  width:94%;
+  height: 151rpx;
+   /* margin-top:48.5rpx;   */
+   position:absolute;
+   top:48.5rpx;
+   left:3%;
+  
+}
+
+.info .left{
+  width:80%;
+  height: 151rpx;
+  float:left;
+}
+
+.left text{
+  display: block;
+  width:100%;
+  height: 60.5rpx;
+  font-family: SourceHanSansCN-Medium;
+	font-size: 44rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #ffffff;
+   /* line-height: 75rpx;  */
+}
+.left .p{
+  font-family: SourceHanSansCN-Regular;
+	font-size: 30rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #d1d1d1;
+}
+
+.info .right{
+  width:20%;
+  height: 151rpx;
+  float:right;
+  text-align: center;
+  
+}
+button::after {
+
+width:0;
+
+height:0;
+
+top:0;
+
+left:0
+
+}
+.info .right .getuserinfo{
+  /* background: none;  */
+  display: block;
+  background-color: rgba(255,255,255,0);
+  width:100%;
+  height: 151rpx;
+  position:none;
+margin-left:auto;
+margin-right:auto;
+padding-left:0rpx;
+padding-right:0rpx;
+box-sizing:border-box;
+font-size:18px;
+text-align:center;
+text-decoration:none;
+line-height:0rpx;
+border-radius:5px;
+-webkit-tap-highlight-color:transparent;
+overflow:hidden;
+color:#000000;
+  
+  
+}
+.info .right .getuserinfo image{
+  margin-right: 150rpx;
+}
+.info .right image{
+  width: 121rpx;
+	height: 121rpx;
+	background-color: #e4e4e4; 
+  margin-top: 15rpx;
+  border-radius: 50%;  
+}
+
+
+.hr{
+  width: 100%;
+  height: 20rpx;
+  background: #fbfafa;
+}
+
+.nav{
+  width:100%;
+  /* height: 337rpx; */
+}
+.nav .nav_{
+  width:94%;
+  height: 33%;
+  margin: 0 auto;
+}
+.hr2{
+  width: 100%;
+  height: 2rpx;
+  background: #e5e5e5;
+}
+.nav_ .left{
+  width:8%;
+  height: 100%;
+  float:left;
+  line-height: 112.333rpx;
+}
+
+.nav_ .left image{
+  width:30rpx;
+}
+
+.nav_ .centen{
+  width:72%;
+  height: 100%;
+  float:left;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+ line-height: 112.333rpx;
+color: #090923;
+  
+}
+
+.nav_ .right{
+  width:20%;
+  height: 100%;
+  float:left;
+  text-align: right;
+   line-height: 112.333rpx;
+  
+}
+.nav_ .right image{
+  width:12rpx;
+}
+
+/* 我要招人 */
+.zhaoren{
+  width:100%;
+  height: 112.333rpx;
+  line-height: 112.333rpx;
+  text-align: center;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	color: #090923;
+  background: #fff;
+}
+
+.bottom{
+  width: 100%;
+  height: 500rpx;
+  max-height: 100%;
+  background: #fbfafa;
+  position:fixed;
+  bottom: 0rpx;
+  border-bottom: 1rpx solid #b4b4b4;
+  z-index: -1;
+}
+
+.unlogin{
+  width:100%;
+  height: 112.333rpx;
+  line-height: 112.333rpx;
+  text-align: center;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 30rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	color: #b2b2b2;
+}
+.confirmtop{
+   position:fixed;
+   background: #000;
+   top:0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+    z-index: 9999; 
+   background-color:rgba(0,0,0,0.2); 
+}
+.confirm{
+  width:80%;
+  height: auto;
+  margin:0 auto;
+   position:fixed; 
+  background:#fff;
+  z-index: 9999;
+  top:45%;
+  left: 10%;
+  border-radius: 10rpx;
+   filter:none;  
+  
+    
+}
+.confirm>.title{
+width: 100%;
+height: 50rpx;
+font-size: 30rpx;
+font-weight:bold;
+text-align: center;
+line-height: 50rpx;
+margin-top: 30rpx;
+}
+.confirm>.p{
+  width: 100%;
+  height: auto;
+  font-size: 25rpx;
+   text-align: center; 
+  color: #f00;
+  line-height: 30rpx;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  
+}
+.confirm>.button{
+  width: 100%;
+  height: 100rpx;
+  border-top: 1rpx solid #eee;
+}
+.confirm>.button>.left,.confirm>.button>.right{
+  width: 49.5%;
+  height: 100rpx;
+  float: left;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  font-weight:bold;
+
+}
+.confirm>.button>.center{
+  width: 1rpx;
+  height: 100rpx;
+  margin:0 auto;
+  float: left;
+  background: #eee;
+}
+.confirm>.button>.right{
+  float: right;
+}
+
+/* 遮罩层*/
+.zj-cover{
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:100;
+  background:rgba(0, 0, 0,0.6);
+}
+/* 选择登录模式 */
+.zj-choose-login{
+  opacity: 1;
+  position:fixed; 
+  width:70%;
+  top:300rpx;
+  left:0;
+  right:0;
+  margin:0 auto;
+  height:400rpx;
+  background: #fff;
+  border-radius: 5px
+}
+.zj-cancle-login image{
+  width:40rpx;
+  height:40rpx;
+  float:right;
+  margin-right:30rpx;
+  margin-top:30rpx;
+}
+.zj-login-style{
+  text-align: center;
+  width:100%;
+  display:block;
+  color:black;
+  font-size: 34rpx;
+  margin-top:10rpx;
+}
+
+.zj-wechat-login{
+  width:80%;
+  /* display:flex;
+  align-items:center;
+  justify-content: center;
+  justify-content: space-around; */
+  margin:0 auto;
+  margin-top:50rpx;
+  border-radius:5px;
+  height:100rpx;
+  background: #6DC3D2
+}
+.zj-wechat-login image{
+  float:left;
+  margin-left:80rpx;
+  margin-top:25rpx;
+}
+.zj-wechat-login text{
+  float:left;
+  margin-left:30rpx;
+  margin-top:30rpx;
+}
+.getUserInfo{
+  position:absolute;
+  width:80%;
+  opacity: 0
+}
+
+.zj-mobile-login{
+  width:80%;
+  /* display:flex;
+  align-items:center;
+  justify-content: space-around; */
+  margin:0 auto;
+  margin-top:50rpx;
+  border-radius:5px;
+  height:100rpx;
+  background: #F8F8F8
+}
+.zj-wechat-login image{
+  width:64rpx;
+  height:55rpx;
+}
+
+.zj-mobile-login image{
+  width:36rpx;
+  height:64rpx;
+  float:left;
+  margin-left:90rpx;
+  margin-top:20rpx;
+}
+.zj-wechat-login text{
+  color:#fff;
+  font-size: 30rpx;
+}
+.zj-mobile-login text{
+  color:black;
+  font-size: 30rpx;
+  float:left;
+  margin-left:50rpx;
+  margin-top:30rpx;
+}
+.clear{
+  clear:both;
+}
+/* .fake-button{
+  width: 100%!important;
+  background: #FFFFFF;
+} */
+.certification{
+  position:relative;
+  z-index:1;
+}
+.hide-button{
+  position:absolute;
+  opacity: 0;
+  top:0;
+  left:0;
+  width:100%;
+  height:100rpx;
+  /* border:1px solid red; */
+  z-index:100;
+}

@@ -1,0 +1,17 @@
+<view class="body">
+    <view class='content'>
+     <form bindsubmit="formSubmit">
+        <view class='select' style='border:none;'>
+            <view class='left'>就职状态</view>
+            <view class='center'>
+              <input placeholder-class="phcolor"   placeholder="请选择" value='{{status}}' disabled="true" />
+              <input  name="status" value='{{index}}' disabled="true" />
+            </view>
+            <view class='right'> <picker bindchange="bindPickerChange" range="{{statusarray}}"><image class='rightimg' mode='widthFix' src="{{iconpath}}right.png"></image></picker></view>
+        </view>
+        <view class='btop'>
+            <button form-type="submit" class='button'>保存</button>
+        </view>
+      </form>
+    </view>
+</view>

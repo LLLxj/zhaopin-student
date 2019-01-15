@@ -1,0 +1,27 @@
+<view class="body">
+    <view class='centent' wx:if="{{hasData}}">
+      <view class='list'  wx:for="{{data}}" bindtap='repostion' data-id="{{item.recruitment_id}}">
+          <view class='content'>
+              <view class='left'>
+                <image mode='widthFix' src='{{domain}}{{item.company.logo}}'></image>
+              </view>
+              <view class='center'>
+                  <view class='ctop'>{{item.position}}</view>
+                  <view class='ccenter'>{{item.city}} | 黑格力斯</view>
+                  <view class='cbottom'>{{item.salary}}</view>
+              </view>
+              <view class='right'>
+                <view class='rtop'>{{item.time}}<text style='color:#fff'>1</text></view>
+                <view class='rbottom'>【{{item.status}}】</view>
+              </view>
+          </view>
+      </view>
+    </view>
+
+    <view class='zj-content' wx:if="{{noData}}" style="width:{{width}}px;height:{{height}}px">
+      <view class='content_'>
+          <image mode='widthFix' src='../../images/manageNoData.png'></image>
+           <text>暂无数据</text> 
+      </view>
+    </view>
+</view>

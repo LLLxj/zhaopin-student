@@ -1,0 +1,8 @@
+
+<template name="alert">
+      <!-- 弹窗 -->
+     <view class='alert' style='display:{{alert}}'>
+      <image src="{{iconpath}}loginerror.png" mode='widthFix'></image>
+      <text>{{alertmsg}}</text>
+     </view>  
+</template>

@@ -1,0 +1,108 @@
+<view class="body">
+    <view class='centent'>
+        <view class='top'>
+            <view class='top_'>
+                <view class='left'>{{data.position}}</view>
+                <view class='right'>{{data.salary}}</view>
+            </view>
+            <view class='bottom_'>
+                <view class='left'>{{data.cityname}} | {{data.experience}} | {{data.degree}}</view>
+                <view class='right'>{{data.number}}人</view>            
+            </view>
+        </view>
+
+        <!-- 分割线 -->
+        <view class='hr'></view>
+        <!-- 职位详情 -->
+        <view class='dali'>
+          <view class='title'>
+               <view class='left'><image mode='widthFix' src='{{iconpath}}yundian.png'></image></view> 
+               <view class='right'>职位详情</view> 
+          </view>
+
+          <text class='text' space="emsp">
+{{data.details}}
+          </text>
+        </view>
+        <!-- 分割线 -->
+        <view class='hr'></view>
+
+
+
+        <!-- 职位详情 -->
+        <view class='dali'>
+          <view class='title'>
+               <view class='left'><image mode='widthFix' src='{{iconpath}}yundian.png'></image></view> 
+               <view class='right'>岗位要求</view> 
+          </view>
+
+          <text class='text' space="emsp">
+{{data.requirements}}
+          </text>
+        </view>
+        <!-- 分割线 -->
+        <view class='hr'></view>
+
+
+
+        <!-- 职位详情 -->
+        <view class='dali'>
+          <view class='title'>
+               <view class='left'><image mode='widthFix' src='{{iconpath}}yundian.png'></image></view> 
+               <view class='right'>公司简介</view> 
+          </view>
+
+          <text class='text' space="emsp">
+{{data.company.introduction}}
+          </text>
+        </view>
+        <!-- 分割线 -->
+        <view class='hr'></view>
+
+
+        <!-- 职位详情 -->
+        <view class='dali'>
+          <view class='title'>
+               <view class='left'><image mode='widthFix' src='{{iconpath}}yundian.png'></image></view> 
+               <view class='right'>公司地址</view> 
+          </view>
+          <view class='map'>
+          <!-- <view class='left'>
+              <image mode='widthFix' src='{{iconpath}}map.png'></image>
+          </view> -->
+          <view class='right'>
+             <view class='text' bindtap='mymap' data-location='{{data.location}}' data-title="{{data.company.companyname}}">
+              {{data.address}}
+              <text class='show' style='color:#6ac4d2;'>查看地图</text>
+              </view>
+          </view>
+          </view>
+        </view>
+  <!-- 分割线 -->
+        <view class='hr'></view>
+
+        <!-- 公司相册 -->
+        <view class='dali photo' wx:if="{{data.company.photo}}">
+          <view class='title'>
+               <view class='left'><image mode='widthFix' src='{{iconpath}}yundian.png'></image></view> 
+               <view class='right'>公司相册</view> 
+          </view>
+          <view class='body'>
+                <view class='list' wx:for="{{data.company.photo}}" wx:key="unique" wx:for-item="val" >
+                    <image mode='widthFix' src="{{val}}" bindtap='delimage' data-src="{{val}}" ></image>
+                </view>
+          </view>
+ 
+        </view>
+        <!-- 分割线 -->
+        <view class='hr' style='height:100rpx'></view>
+
+
+        <!-- 按钮 -->
+        <view class='button' bindtap='{{send}}' data-id='{{data.recruitment_id}}' style='background:{{buttonbg}};color:{{buttoncolor}}'>
+        {{buttontext}}
+        </view>
+        
+    
+    </view>
+</view>

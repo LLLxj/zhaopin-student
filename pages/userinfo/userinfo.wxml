@@ -1,0 +1,76 @@
+<view class='body'>
+    <view class='content' id='lid'>
+      <form bindsubmit="formSubmit">
+      <view class='select'>
+          <view class='left'>真实姓名</view>
+          <view class='center'><input maxlength="20" name="username" value="{{userinfo.username}}" placeholder-class="phcolor" placeholder="请输入" /></view>
+          <view class='right'></view>
+      </view>
+
+      <view class='select'>
+           <view class='left'>性别</view>
+           <picker bindchange="bindPickerChange" range="{{sexarray}}">
+          <view class='center'>
+             <input placeholder-class="phcolor" name="sex" placeholder="请选择" value='{{sex||userinfo.sex}}' disabled="true" />
+          </view>
+          <view class='right'> <image class='rightimg' mode='widthFix' src="{{iconpath}}right.png"></image></view>
+          </picker>
+      </view>
+
+
+
+      <view class='select' style='border:none;'>
+           <view class='left'>出生年月</view>
+           <picker mode="date" bindchange="birthdayChange" start="1970" end="2005">
+          <view class='center'>
+             <input placeholder-class="phcolor" placeholder="请选择" name="borndate" value='{{birthday||userinfo.borndate}}' disabled="true" />
+          </view>
+          <view class='right'> 
+              <image class='rightimg' mode='widthFix' src="{{iconpath}}right.png"></image>
+          </view>
+          </picker>
+      </view>
+
+      <view class='hr' style='height:10rpx;'></view>
+
+      <view class='select'>
+           <view class='left'>工作年限</view>
+           <picker bindchange="workdateChange" range="{{workdatearray}}">
+          <view class='center'>
+             <input placeholder-class="phcolor" placeholder="请选择" name="worktime" value='{{workdate||userinfo.worktime}}' disabled="true"/>
+          </view>
+          <view class='right'> <image class='rightimg' mode='widthFix' src="{{iconpath}}right.png"></image></view>
+          </picker>
+      </view>
+
+
+      <view class='select'>
+           <view class='left'>所在城市</view>
+           <picker mode="region" bindchange="areaChange"  >
+          <view class='center'>
+             <input placeholder-class="phcolor" placeholder="请选择" name="city" value='{{area||userinfo.city}}' disabled="true" />
+          </view>
+          <view class='right'> <image class='rightimg' mode='widthFix' src="{{iconpath}}right.png"></image></view>
+          </picker>
+      </view>
+
+
+      <view class='select' style='border:none;'>
+          <view class='left'>联系方式</view>
+          <view class='center'><input maxlength="11" name="mobile" type='number' value='{{userinfo.mobile}}' placeholder-class="phcolor" placeholder="请输入" /></view>
+          <view class='right'></view>
+      </view>
+
+      <view class='introduction'>
+          <view class='title'><view>介绍自己</view></view>
+          <textarea placeholder="突出自己的优势特长" maxlength="500" name="introduction" value='{{userinfo.introduction}}' bindinput="textchange"></textarea>
+           <view class='len'>{{textlen}}/500</view>
+      </view>
+
+      <button class='button' form-type="submit">保存</button>
+    </form>
+    <!-- <import src="../../public/template/template.wxml"/>  -->
+    <!-- <template is="alert" data="{{alert,iconpath,alertmsg}}"></template> -->
+      
+    </view>
+</view>

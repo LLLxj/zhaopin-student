@@ -1,0 +1,28 @@
+<view class="body">
+    <view class='content'>
+     <form bindsubmit="formSubmit">
+        <view class='select' style='border:none;'>
+            <view class='left'>求职意向</view>
+             <picker bindchange="bindPickerChange1" range="{{intentionarry}}">
+            <view class='center'>
+              <input placeholder-class="phcolor" placeholder="请选择" value='{{intention||intentionarry[0]}}' disabled="true" name="intention"/>
+            </view>
+            <view class='right'><image class='rightimg' mode='widthFix' src="{{iconpath}}right.png"></image></view>
+            </picker>
+        </view>
+
+        <view class='select' style='border:none;'>
+            <view class='left'>期望薪资</view>
+            <picker bindchange="bindPickerChange2" range="{{salaryarray}}">
+            <view class='center'>
+              <input placeholder-class="phcolor" placeholder="请选择" value='{{salary||salaryarray[0]}}' disabled="true" name="salary"/>
+            </view>
+            <view class='right'> <image class='rightimg' mode='widthFix' src="{{iconpath}}right.png"></image></view>
+            </picker>
+        </view>
+        <view class='btop'>
+            <button class='button' form-type='submit'>保存</button>
+        </view>
+         </form>
+    </view>
+</view>

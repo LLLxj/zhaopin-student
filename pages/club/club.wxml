@@ -1,0 +1,65 @@
+<!--job/club/club.wxml-->
+<!--俱乐部列表-->
+ <view class="container" wx:if="{{internal == 0}}">
+    <view class="top">
+      <image mode='widthFix' src="../../images/bg2.jpg"></image>
+    </view>
+    <view class="pic-content">
+      <view class="pic-content-title">
+        <text>俱乐部，享福利</text>
+      </view>
+
+      <view class="pic-content-sec">
+        <text>立即报名成为认证俱乐部</text>
+        <text>更多惊喜等你哦！</text>
+      </view>
+    </view>
+
+    <view class="contant">
+      <text class="title">填写个人信息</text>
+      <view class="form-container">
+        <form bindsubmit="formSubmit" bindreset="formReset">
+          <!-- <view class="section">
+            <picker bindchange="bindPickerChange" value="{{index}}" name="schoolId" range="{{array}}">
+              <view class="picker">{{array[index]}}</view>
+            </picker>
+          </view> -->
+
+          <view class="section">
+            <input class="picker" name="name" bindinput="getName" placeholder='请输入姓名'></input>
+          </view>
+
+          <view class="section">
+            <input class="picker" name="tel" bindinput="getTel" type="number" placeholder='请输入电话号码'></input>
+          </view>
+          <button form-type='submit' class='submit'>确认提交</button>
+        </form>
+      </view>
+    </view>
+  </view>
+
+<!-- <view class="club_info"> -->
+  <view class="club_content" wx:else>
+    <view class="club_info_list" wx:for="{{data}}" bindtap='to_club_info' wx:key="unique" data-id='{{item.company_id}}'>
+        <view class='left'>
+          <view class="left_bor">
+            <image class="club_info_img" mode='widthFix' src="{{item.logo}}"></image>
+          </view>
+        </view>
+        <view class="center">
+            <view class="club_name" >{{item.companyname}}</view>
+            <view class="region" >{{item.province}} |  {{item.city}}</view>
+            <view class="works_num">{{item.position_num}}个岗位</view>
+        </view>
+        <view class="right">
+            <image class="detail_arror" mode='widthFix'  src='../../images/right.png'></image>
+        </view>
+        <view class="clear"></view>
+    </view>
+    <!-- <view class="clear"></view> -->
+
+    <view class='prompt' style='display:{{prompt_display}}'> {{prompt_msg}} </view>
+    <!-- <view class='prompt' style='display:{{prompt_display}}'> prompt_msg </view> -->
+    <!-- <view class='line'></view> -->
+  </view> 
+<!-- </view> -->

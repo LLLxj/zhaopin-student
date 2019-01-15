@@ -1,0 +1,419 @@
+/* job/club1/club1.wxss */
+.top{
+  width: 94%;
+	height: 170rpx;
+	background-color: #fff;
+  margin:0 auto;
+}
+
+.top>view{
+  width:100%;
+  height: 50%;
+}
+
+.top .top_{
+  line-height: 100rpx;
+}
+.top .bottom_{
+  line-height: 50rpx;
+}
+.top>view .left{
+  width:70%;
+  height: 100%;
+  float:left;
+}
+.top>view .right{
+  width:30%;
+  height: 100%;
+  float:right;
+}
+
+.top .top_ .left{
+  font-family: SourceHanSansCN-Medium;
+	font-size: 42rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #000000;
+}
+.top .top_ .right{
+  font-family: ArialMT;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #6ac4d2;
+  text-align: right;
+}
+
+
+.top .bottom_ .left{
+  font-family: SourceHanSansCN-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #d6d6d6;
+}
+.top .bottom_ .right{
+  font-family: ArialMT;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #e42387;
+  text-align: right;
+}
+
+.hr{
+  width:100%;
+  height: 10rpx;
+  background:#fafafa;
+}
+
+.dali{
+  width:94%;
+  height: auto;
+  background:#fff;
+  margin:0 auto;
+}
+
+.dali .title{
+  width:100%;
+  height: 32rpx;
+  background:#fff;
+  line-height: 32rpx;
+  margin-top: 48rpx;
+}
+.dali .title .left{
+  width:5%;
+  height: 32rpx;
+  float:left;
+}
+.dali .title .left image{
+  width:6rpx;
+}
+
+.dali .title .right{
+  width:95%;
+  height: 32rpx;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #000000;
+}
+
+.dali .text{
+  width:100%;
+  height: auto;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	 line-height: 30rpx; 
+	color: #9b9b9b;
+   overflow:none;
+  white-space:normal;
+  text-overflow : clip; 
+}
+.dali .map view{
+  height: auto;
+  float: left;
+}
+
+.dali .map .left{
+  width:5%;
+}
+.dali .map .right{
+  width:95%;
+}
+.dali .map .right text{
+   width:100%;
+  height: auto;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	 line-height: 30rpx; 
+	color: #9b9b9b;
+   overflow:none;
+  white-space:normal;
+  text-overflow : clip; 
+}
+.dali .map .right .text{
+  width:100%;
+  height: auto;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	 line-height: 35rpx; 
+	color: #9b9b9b;
+   overflow:none;
+  white-space:normal;
+  text-overflow : clip; 
+  padding-bottom: 48rpx;
+  padding-top: 48rpx;
+  text-align: left;
+}
+
+
+
+.show{
+color:#6ac4d2;
+}
+
+.dali .map .left image{
+  width: 15rpx;
+   line-height: 30rpx;
+   display: inline-block;
+   margin-top: 72rpx;
+}
+.dali .map .text{
+  
+  width:100%;
+  height: auto;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	 line-height: 30rpx; 
+	color: #9b9b9b;
+   overflow:none;
+  white-space:normal;
+  text-overflow : clip; 
+}
+
+.button{
+  width: 100%;
+	height: 88rpx;
+	background-color: #f00;
+	/* border-radius: 10rpx; */
+   position:fixed; 
+  z-index: 999;
+  bottom: 0rpx;
+  text-align: center;
+  line-height: 88rpx;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 36rpx;
+	font-weight: normal;
+	font-stretch: normal;
+}
+
+.photo .body{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-top:48rpx;
+}
+.photo .body .list{
+  width: 33.33%;
+  height: 224rpx;
+  float: left;
+   text-align: center; 
+  margin-top: 10rpx;
+  /* margin-left: 2%; */
+}
+
+.photo .body .list image{
+  width: 97%;
+}
+
+/* 头部公司信息开始 */
+.club_img_info{
+  width:100%;
+  height:350rpx;
+  position:relative;
+}
+club_img_bor{
+  width:100%;
+  height:100%;
+}
+.club_bac{
+  width:100%;
+}
+.club_logo_and_name{
+  width:30%;
+  border:1rpx solid blue;
+  position:absolute;
+  height:200rpx;
+  top:30rpx;
+  left:0;
+  right:0;
+  margin:0 auto;
+}
+.club_logo{
+  position:absolute;
+  width:150rpx;
+  height:150rpx;
+  top:100rpx;
+  left:0;
+  right:0;
+  margin:0 auto;
+  border-radius:50%;
+}
+.club_name{
+  position:absolute;
+  top:280rpx;
+  left:0;
+  right:0;
+  margin:0 auto;
+  text-align: center;
+  font-size:34rpx;
+  color:#ffffff;
+}
+/* 头部公司信息结束 */
+
+/* 导航切换栏开始 */
+.navbar{
+  /* flex: none; */
+  /* display: flex; */
+  background: #fff;
+}
+.navbar .item{
+  position: relative;
+  width:10%;
+  margin-left:23%;
+  font-size: 30rpx;
+  line-height: 100rpx;
+  color:#B1B1B1;
+}
+.navbar .item.active{
+  color: #6ac4d2;
+}
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -30rpx;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: #6ac4d2;
+}
+.navbar{
+  border-bottom:1rpx solid #c6c6c6;
+}
+/* 导航切换结束 */
+
+/* 在招职位开始 */
+.list{
+  width: 100%;
+	height: 235rpx;
+	background-color: #ffffff;
+  border-bottom: 10rpx solid #fafafa;
+}
+
+.list .content{
+  width:94%;
+  height: 235rpx;
+  margin:0 auto;
+  /* background:#f00; */
+}
+
+.list .content>view{
+  width: 100%;
+  height: 33.33%;
+}
+.list .content .top{
+  /* background:#00f; */
+  line-height: 120rpx; 
+}
+
+.list .content .centent{
+  /* background:#000; */
+	line-height: 85rpx;
+  
+}
+
+.list .content .bottom{
+  /* background:#ff0; */
+	line-height: 37rpx;
+  
+}
+
+.top .left,.centent_hire .left{
+  width:70%;
+  height: 100%;
+  float:left;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #000000;
+
+}
+
+.top .right,.centent_hire .right{
+  width:30%;
+  height: 100%;
+  float:right;
+  text-align: right;
+  font-family: ArialMT;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #6ac4d2;
+  
+}
+
+.centent .left{
+  font-family: SourceHanSansCN-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #d6d6d6;
+}
+
+.centent .right{
+  font-family: ArialMT;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color:#e42387;
+}
+.employee .left{
+  width:70%;
+  float:left;
+}
+.employee .right{
+  width:30%;
+  float:right;
+  text-align: right;
+}
+
+.bottom .logo{
+  width:37rpx;
+  height: 37rpx;
+  float:left;
+}
+.bottom .logo image{
+width:37rpx;
+}
+.bottom .cname{
+  width:92%;
+  height: 100%;
+  float:right;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #d6d6d6;  
+}
+
+.line{
+  width:100%;
+  height: 1px;
+  background:#b4b4b4;
+  position:fixed;
+  bottom: 0rpx;
+}
+
+/* 在招职位结束 */

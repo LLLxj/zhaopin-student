@@ -1,0 +1,76 @@
+<view class='body'>
+
+  <view class="container" wx:if="{{internal !== 1}}">
+    <view class="top">
+      <image mode='widthFix' src="../../images/bg1.jpg"></image>
+    </view>
+    <view class="pic-content">
+      <view class="pic-content-title">
+        <text>好课程不怕你试听</text>
+        <text>我们敢放你敢来吗</text>
+      </view>
+     
+
+      <view class="pic-content-sec">
+        <text>黑格力斯从不会吝啬</text>
+        <text>将好课程放出来</text>
+        <text>只要你有试听的欲望</text>
+      </view>
+    </view>
+
+    <view class="contant">
+      <text class="title">线下试听课程</text>
+      <view class="form-container">
+        <form bindsubmit="formSubmit" bindreset="formReset">
+          <!-- <view class="section">
+            <picker bindchange="bindPickerChange" value="{{index}}" name="schoolId" range="{{array}}">
+              <view class="picker">{{array[index]}}</view>
+            </picker>
+          </view> -->
+
+          <view class="section">
+            <input class="picker" name="name" bindinput="getName" placeholder='请输入姓名'></input>
+          </view>
+
+          <view class="section">
+            <input class="picker" name="tel" bindinput="getTel" type="number" placeholder='请输入电话号码'></input>
+          </view>
+          <button form-type='submit' class='submit'>确认提交</button>
+        </form>
+      </view>
+    </view>
+  </view>
+
+  <view class='content' wx:else>
+    <image class='banner' wx:if="{{adlist.length == 0}}" src='{{iconpath}}jlbanner.png' mode='widthFix'></image>
+    <swiper indicator-dots="true" wx:if="{{adlist.length > 0}}" indicator-color="#fafafa" indicator-active-color="#e35800" autoplay="true" interval="2000">
+      <block wx:for="{{adlist}}" wx:key="unique" >
+        <swiper-item bindtap="jump" data-id='{{item.company_id}}'>
+          <image mode='widthFix' src="{{item.src}}" width="100%" />
+        </swiper-item>
+      </block>
+    </swiper>
+
+      <view class='list' wx:for="{{data}}" wx:key="unique" bindtap='url' data-id='{{item.recruitment_id}}'>
+        <view class='content'>
+            <view class='top'>
+              <view class='left'>{{item.position}}</view>
+              <view class='right'>{{item.salary}}</view>
+            </view>
+            <view class='centent'>
+                <view class='left'>{{item.city}} | {{item.experience}} | {{item.degree}}</view>
+                <view class='right'>{{item.number}}人</view>
+            </view>
+            <view class='bottom'>
+              <view class='logo'><image mode='widthFix' src='{{domain}}{{item.logo}}'></image></view>
+              <view class='cname'>{{item.companyname}}</view>
+            </view>
+        </view>
+      </view>
+
+       <view class='prompt' style='display:{{prompt_display}}'> {{prompt_msg}} </view>
+      <!-- 底线 -->
+      <!-- <view class='line'></view> -->
+  
+  </view>
+</view>

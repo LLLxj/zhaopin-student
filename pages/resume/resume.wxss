@@ -1,0 +1,649 @@
+
+/* 个人信息 */
+.user{
+  width:94%;
+  height: 270rpx;
+  margin:0 auto;
+}
+
+.user .left{
+  width:70%;
+  height: 270rpx;
+  float:left;
+}
+.user .left>view{
+  width: 100%;
+  height: 20%;
+}
+
+.user .left .li1 .username{
+  font-family: SourceHanSansCN-Medium;
+	font-size: 44rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #000000;
+  margin-right: 50rpx;
+  line-height: 54rpx;
+}
+.user .left .li1 .upuinfo{
+  font-family: SourceHanSansCN-Regular;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 54rpx;
+	letter-spacing: 0rpx;
+	color: #6ac4d2;
+  /* float: right; */
+  /* text-align: center; */
+}
+.user .left .li2{
+  font-family: SourceHanSansCN-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 54rpx;
+	letter-spacing: 0rpx;
+	color: #d6d6d6;
+}
+.user .left .li3{
+  font-family: SourceHanSansCN-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	 /* line-height: 54rpx;  */
+	letter-spacing: 0rpx;
+	color: #9b9b9b;
+  padding-top:13.5rpx;
+  
+}
+.user .left .li3 image{
+  width:21rpx;
+  display: inline-block;
+  margin-right: 20rpx;
+  float:left;
+}
+
+.user .right{
+  width:30%;
+  height: 270rpx;
+  float: right;
+  text-align: center;
+  /* background: #f00 */
+}
+.user .right>.icon_{
+width: 121rpx;
+height: 121rpx; 
+border-radius: 50%;
+background: #000;
+margin-left: 25%;
+margin-top: 74.5rpx;
+}
+
+.user .right image{
+  width: 121rpx;
+	 height: 121rpx; 
+	background-color: #e4e4e4; 
+}
+
+/* 状态 */
+.status{
+  width:94%;
+  height: 117rpx;
+  margin:0 auto;
+}
+.status .left{
+  width:80%;
+  height: 117rpx;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #090923;
+  line-height: 117rpx;
+  float:left;
+  
+}
+
+.status>.right{
+   width:20%; 
+  height: 117rpx;
+   float:right; 
+  text-align: right;
+    line-height: 117rpx;
+  
+}
+.status .right image{
+    width:12rpx; 
+     /* float:right;  */
+}
+
+
+
+/* 个人介绍 */
+.introduce{
+  width:94%;
+  height: auto;
+  background:#fff;
+  margin:0 auto;
+}
+
+.introduce .title{
+  width:100%;
+  height: 32rpx;
+  background:#fff;
+  line-height: 32rpx;
+  margin-top: 48rpx;
+}
+.introduce .title .left{
+  width:5%;
+  height: 32rpx;
+  float:left;
+}
+.introduce .title .left image{
+  width:6rpx;
+}
+
+.introduce .title .right{
+  width:95%;
+  height: 32rpx;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #000000;
+}
+
+.introduce .text{
+  width:100%;
+  height: auto;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	 line-height: 30rpx; 
+	color: #9b9b9b;
+   overflow:none;
+  white-space:normal;
+  text-overflow : clip; 
+}
+
+
+/* 求职意向 */
+.intention{
+  width: 94%;
+  height: 191rpx;
+  margin:0 auto;
+  background: #fff;
+}
+
+.intention .title{
+  width:100%;
+  height: 50%;
+  line-height: 132.5rpx;
+
+}
+
+.intention .title .left{
+  width:5%;
+  height: 100%;
+  float:left;
+}
+.intention .title .left image{
+  width:6rpx;
+}
+
+.intention .title .center{
+  width:70%;
+  height: 100%;
+  float:left;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #000000;
+}
+
+
+.intention .title .right{
+  width:25%;
+  height: 100%;
+  float:right;
+  text-align: right;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #6ac4d2;
+}
+
+.intention .text{
+  width: 100%;
+  height: 50%;
+  margin-top: 20rpx;
+}
+
+.intention .text .left{
+  width:50%;
+  height: 100%;
+  float: left;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 30rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 48rpx;
+	letter-spacing: 0rpx;
+	color: #000000;
+}
+
+.intention .text .right{
+  width:50%;
+  height: 100%;
+  float: right;
+  text-align: right;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 30rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 48rpx;
+	letter-spacing: 0rpx;
+	color: #6ac4d2;
+}
+
+
+/* 学习经历 */
+
+.xuexi{
+  width:100%;
+  height: auto;
+}
+
+.xuexi>.title{
+  height: 95.5rpx;
+  
+}
+.xuexi>.title>.center{
+  width:95%;
+}
+.xuexi .xlist{
+  width: 100%;
+  height:172rpx;
+  background: #fff;
+  
+}
+.xuexi>view{ 
+  width: 100%;
+   height: 50%; 
+} 
+.xuexi .xlist .top{
+width: 100%;
+ height: 83.5rpx;
+ line-height: 120rpx; 
+
+}
+.xuexi .xlist .bottom{
+width: 100%;
+ height: 83.5rpx;
+ line-height: 40rpx; 
+/* background: #000000; */
+
+}
+.xuexi .xlist>view>.xleft{
+  width:60%;
+  height: 100%;
+  float:left;
+}
+.xuexi .xlist>view>.xright{
+  width:40%;
+  height: 100%;
+  float:right;
+  text-align: right;
+}
+
+.xuexi .xlist .top .xleft{
+  font-family: SourceHanSansCN-Regular;
+	font-size: 30rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #000000;
+ line-height: 120rpx; 
+  
+  
+}
+.xuexi .xlist .top .xright{
+  font-family: SourceHanSansCN-Regular;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #6ac4d2;
+  /* line-height: 83.5rpx; */
+  
+}
+
+.xuexi .xlist .bottom .xleft{
+ font-family: SourceHanSansCN-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #a9a9a9;
+ line-height: 40rpx; 
+  
+}
+.xuexi .xlist .bottom .xright{
+ font-family: SourceHanSansCN-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #a9a9a9;
+ line-height: 40rpx; 
+  
+}
+
+/* 添加简历 */
+.add{
+  width:100%;
+  height: 106rpx;
+   /* line-height: 106rpx;  */
+  
+}
+.add view{
+  width:32%;
+  height: 106rpx;
+  text-align: center;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 30rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #000000;
+  margin:0 auto;
+  padding-top: 33rpx;
+}
+.add view image{
+  display: inline-block;
+  width: 42rpx;
+    float: left;  
+}
+
+
+
+/* 工作经历 */
+.work{
+  width: 100%;
+  height: auto;
+
+}
+.work .title{
+  width:94%;
+  margin: 0 auto;
+  height: 97rpx;
+}
+
+.work .title .left{
+  width:5%;
+  height: 50rpx;
+  float: left;
+  margin-top: 48rpx;
+  
+}
+.work .title .left image{
+  width: 6rpx;
+}
+.work .title .center{
+   width:  85%;
+   height: 50rpx;
+   float: left;
+   font-family: SourceHanSansCN-Regular;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #000000;
+  line-height: 60rpx;
+  margin-top: 48rpx;
+  
+}
+
+.work .title .right{
+  width: 10%;
+  height: 50rpx;
+  float: right;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #6ac4d2;
+  line-height: 60rpx;
+  margin-top: 48rpx;
+}
+
+
+.work .text{
+  width:100%;
+  height: auto;
+  margin:0 auto;
+}
+
+.work .text .ttitle{
+  width: 94%;
+  margin: 0 auto;
+  height: 50rpx;
+   line-height: 50rpx;
+  margin-top: 35rpx;
+  
+}
+.work .text .ttitle .left{
+  width:80%;
+  height: 50rpx;
+  float: left;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #000000;
+ 
+}
+
+.work .text .ttitle .right{
+  width:20%;
+  height: 50rpx;
+  float: right;
+  text-align: right;
+   font-family: SourceHanSansCN-Regular;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #6ac4d2;
+  
+}
+
+.work .text .ttitle2{
+  width: 94%;
+  margin: 0 auto;
+  height: 50rpx;
+  
+}
+
+.work .text .ttitle2 .left{
+  width: 70%;
+  height: 100%;
+  float: left;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #a9a9a9;
+   line-height: 70rpx;
+}
+.work .text .ttitle2 .right{
+  width:30%;
+  height: 100%;
+  float: right;
+  text-align: right;
+  line-height: 70rpx;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #a9a9a9;
+}
+
+.work .text .body{
+  width:94%;
+  margin: 0 auto;
+  height: auto;
+  margin-top: -35rpx;
+  
+}
+.work .text .body text{
+  font-family: SourceHanSansCN-Regular;
+	font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	/* line-height: 26rpx;  */
+	color: #9b9b9b;
+  overflow:none;
+  white-space:normal;
+  text-overflow : clip; 
+}
+
+/* 相册 */
+.photo{
+  width:100%;
+  height: auto;
+}
+
+.photo .title{
+  width: 94%;
+  height: 120rpx;
+  /* background: #ff0; */
+  line-height: 120rpx;
+  margin:0 auto;
+  
+}
+.photo .title .left{
+  width: 5%;
+  height: 120rpx;
+  float: left;
+}
+.photo .title .left image{
+  width: 6rpx;
+}
+.photo .title .right{
+  width: 95%;
+  height: 120rpx;
+  float: left;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 34rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #000000;
+}
+.photo .body{
+  width: 94%;
+  height: auto;
+  margin: 0 auto;
+}
+.photo .body .list{
+  width: 33.33%;
+  height: 224rpx;
+  float: left;
+   text-align: center; 
+  margin-top: 10rpx;
+  /* margin-left: 2%; */
+}
+.photo .body .list>view{
+  width: 97%;
+  height: 224rpx;
+  background:#eee;
+}
+
+.photo .body .list image{
+  width: 100%;
+}
+
+
+
+
+.btop{
+  position:relative;
+  width: 100%;
+  /* height: 170rpx; */
+  max-height: 100%;
+  /* background: #fbfafa; */
+  top: 0rpx;
+  left: 0rpx;
+  right: 0rpx;
+  bottom: 0rpx;
+}
+
+.button{
+  width: 94%;
+	height: 88rpx;
+  margin:0 auto;
+	background-color: #6ac4d2;
+	border-radius: 10rpx;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  text-align: center;
+  font-family: SourceHanSansCN-Regular;
+	font-size: 36rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rpx;
+	color: #ffffff;
+  line-height: 88rpx;
+}
+
+
+.photosbody{
+  /* display: none; */
+  position: fixed;
+  width: 100%;
+  background: #000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-clip: content;
+  background-position:center;
+}
+.photosbody .top{
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 30rpx;
+  top: 0px;
+  text-align: center;
+  color: #fff;
+  /* background: #f00; */
+  font-size: 24rpx;
+}
+
+.photosbody .del{
+  position: fixed;
+  width:100%;
+  /* height: 50rpx; */
+  right: 10rpx;
+  bottom: 10rpx;
+  text-align: center;
+}
+.photosbody .del image{
+  width:50rpx;
+}

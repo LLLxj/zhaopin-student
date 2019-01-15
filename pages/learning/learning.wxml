@@ -1,0 +1,57 @@
+<view class="body">
+    <view class='content'>
+    <form bindsubmit="formSubmit">
+    <input name="learning_id" value='{{data.learning_id}}' style='display:none;' />
+      <view class='select'>
+            <view class='left'>学校名称</view>
+            <view class='center'><input maxlength="20" name="school" value='{{data.school}}' placeholder-class="phcolor" placeholder="请输入" auto-focus/></view>
+            <view class='right'></view>
+        </view>
+
+        <view class='select' style='border:none;'>
+            <view class='left'>当前学历</view>
+             <picker bindchange="bindlearningChange" range="{{learningarray}}">
+            <view class='center'>
+              <input placeholder-class="phcolor"  name="degree" placeholder="请选择" value='{{learning || data.degree}}' disabled="true" auto-focus/>
+            </view>
+            <view class='right'><image class='rightimg' mode='widthFix' src="{{iconpath}}right.png"></image></view>
+            </picker>
+        </view>
+
+
+        <view class='select' style='border:none;'>
+            <view class='left'>资格证书</view>
+            <picker bindchange="bindcertificateChange" range="{{certificatearray}}">
+            <view class='center'>
+              <input placeholder-class="phcolor" name="certificate" placeholder="请选择" value='{{certificate || data.certificate}}' disabled="true" auto-focus/>
+            </view>
+            <view class='right'> <image class='rightimg' mode='widthFix' src="{{iconpath}}right.png"></image></view>
+            </picker>
+        </view>
+
+
+        <view class='select' style='border:none;'>
+            <view class='left'>学习时间</view>
+            <picker mode="multiSelector" bindchange="bindMultiPickerChange"  range="{{multiArray}}">
+            <view class='center'>
+              <input placeholder-class="phcolor" name="schooldate" placeholder="请选择" value='{{xxdate || data.schooldate}}' disabled="true" />
+            </view>
+            <view class='right'> <image class='rightimg' mode='widthFix' src="{{iconpath}}right.png"></image></view>
+            </picker>
+        </view>
+
+
+         <view class='btop'>
+            <button form-type='submit' class='button'>保存</button >
+             <view wx:if="{{data.learning_id&&data.count > 1}}" bindtap='del' data-id="{{data.learning_id}}" class='del'>删除此学习经历</view>
+        </view> 
+        </form>
+    </view>
+</view>
+
+    <!-- 弹窗 -->
+    <view class='alert' style='display:{{alert}};'>
+      <image src="../../images/loginerror.png" mode='widthFix'></image>
+      <text>{{alertmsg}}</text>
+    </view>
+

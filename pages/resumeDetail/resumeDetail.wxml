@@ -1,0 +1,127 @@
+<view class="body">
+    <view class='centent'>
+
+      <view class='user'>
+          <view class='left'>
+            <view></view>
+            <view class='li1'><text class='username'>{{data.user.username}}</text><text class='upuinfo' ></text></view>
+            <view class='li2'>{{data.user.age}}岁<text class='nbsp'>#</text>|<text class='nbsp'>#</text>{{data.user.city2}}<text class='nbsp'>#</text>| {{data.user.sex2}}<text class='nbsp'>#</text>|<text class='nbsp'>#</text>{{data.user.worktime}}</view>
+            <view class='li3'><image mode='widthFix' src='{{iconpath}}mobile.png'></image><text>{{data.resume.mobile2}}</text></view>
+            <view ></view>
+          </view>
+          <view class='right'><image mode='cover' src='{{data.user.icon}}'></image></view>
+      </view>
+
+       <view class='hr'><!-- 分割线 --></view> 
+
+       <view class='status'>
+           <view class='left'>{{data.resume.status2}}</view> 
+       </view>
+       <view class='hr'><!-- 分割线 --></view> 
+
+        <!-- 个人介绍 -->
+      <view class='introduce'>
+          <view class='title'>
+               <view class='left'><image mode='widthFix' src='{{iconpath}}yundian.png'></image></view> 
+               <view class='right'>个人介绍</view> 
+          </view>
+
+          <text class='text' space="emsp">
+{{data.resume.introduction}}
+          </text>
+        </view>
+        <!-- 分割线 -->
+        <view class='hr' style="height:10rpx;"></view>
+       
+
+        <!-- 求职意向 -->
+        <view class='intention'>
+            <view class='title'>
+                <view class='left'><image mode='widthFix' src="{{iconpath}}yundian.png"></image></view>
+                <view class='center'>求职意向</view>
+                <view class='right'></view>
+            </view>
+            <view class='text'>
+                <view class='left'>{{data.resume.position}}</view>
+                <view class="right">{{data.resume.salary}}</view>
+            </view>
+        </view>
+        <!-- 分割线 -->
+        <view class='hr' style="height:10rpx;"></view>
+
+        <!-- 学习经历 -->
+
+        <view class='xuexi intention' >
+           <view class='title' style='width:94%;margin:0 auto;'>
+                <view class='left'><image mode='widthFix' src="{{iconpath}}yundian.png"></image></view>
+                <view class='center'>学习经历</view>
+          </view>
+
+          <view class='xlist' wx:for="{{data.learning}}" wx:for-item="val">
+                <view class='top'style='width:94%;margin:0 auto;'>
+                    <view class='xleft'>{{val.school}}</view>
+                    <view class='xright'></view>
+                </view>
+                <view class='bottom' style='width:94%;margin:0 auto;'>
+                   <view class='xleft'>{{val.degree}} · {{val.certificate}}</view>
+                    <view class='xright'>{{val.schooldate}}</view>
+                </view>
+               <view class='hr' style='height:2rpx;'></view>
+           </view>
+
+        </view>
+       
+         <!-- 分割线 -->
+        <view class='hr' style="height:10rpx;"></view>
+
+        <!-- 工作经历 -->
+        <view class='work'>
+            <view class='title'>
+                <view class='left'><image mode='widthFix' src='{{iconpath}}/yundian.png'></image></view>
+                <view class='center'>工作经历</view>
+                <view class='right'></view>
+            </view>
+
+            <view class='text' wx:for="{{data.work}}" wx:for-item="val">
+                <view class='ttitle'><view class='left'>{{val.company}}</view><view class='right'></view></view>
+                <view class='ttitle2'>
+                    <view class='left'>{{val.position}}</view>
+                    <view class='right'>{{val.workdate}}</view>
+                </view>
+                <view class='body'>
+                    <text space="emsp">
+{{val.results}}
+                    </text>
+                </view>
+                <view class='hr' style='height:2rpx;'></view>
+            </view>
+        </view>
+         <!-- 分割线 -->
+        <view class='hr' style="height:10rpx;"></view>
+
+        <!-- 健身相册 -->
+        <view class='photo'>
+            <view class='title'>
+                <view class='left'><image mode='widthFix' src='{{iconpath}}/yundian.png'></image></view>
+                <view class='right'>健身相册</view>
+            </view>
+            <view class='body'>
+                <view class='list' wx:for="{{photos}}" wx:for-item="val" >
+                    <image mode='widthFix' src="{{val}}" bindtap='delimage' data-src="{{val}}" ></image>
+                </view>
+            </view>
+        </view>
+        <view style='width:100%;height:100rpx;'></view>
+          <!-- 按钮 -->
+        <view class='button' bindtap='send' data-id='{{data.recruitment_id}}' style='background:{{buttonbg}};color:{{buttoncolor}}'>
+        立即沟通
+        </view>
+        <view class='phone'style="display:{{phone}}">
+          <view class='phone_'>
+              <view class='top'>{{data.resume.mobile2}}</view>
+              <view class='center' bindtap='call' data-mobile="{{data.resume.mobile}}">拨打电话</view>
+              <view class='bottom' bindtap='quxiao'>取消</view>
+          </view>
+        </view>
+    </view>
+</view>

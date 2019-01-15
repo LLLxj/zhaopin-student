@@ -1,0 +1,152 @@
+<view class="body">
+    <view class='centent'>
+
+      <view class='user'>
+          <view class='left'>
+            <view></view>
+            <view class='li1'><text class='username'>{{data.user.username}}</text><text class='upuinfo' bindtap='userinfo'>编辑</text></view>
+            <view class='li2'>{{data.user.age}}岁<text class='nbsp'>#</text>|<text class='nbsp'>#</text>{{data.user.city2}}<text class='nbsp'>#</text>| {{data.user.sex2}}<text class='nbsp'>#</text>|<text class='nbsp'>#</text>{{data.user.worktime}}</view>
+            <view class='li3'><image mode='widthFix' src='{{iconpath}}mobile.png'></image><text>{{data.resume.mobile}}</text></view>
+            <view ></view>
+          </view>
+          <view class='right'  bindtap='uploadIcon'>
+            <view class='icon_'>
+              <image mode='widthFix' src='{{icon||data.user.icon}}'></image>
+            </view>
+          </view>
+      </view>
+
+       <view class='hr'><!-- 分割线 --></view> 
+
+       <view class='status'>
+           <view class='left'>{{data.resume.status2}}</view> 
+          <view class='right' bindtap='restatus'><image mode='widthFix' src='{{iconpath}}right.png'></image></view>
+
+       </view>
+       <view class='hr'><!-- 分割线 --></view> 
+
+        <!-- 个人介绍 -->
+      <view class='introduce'>
+          <view class='title'>
+               <view class='left'><image mode='widthFix' src='{{iconpath}}yundian.png'></image></view> 
+               <view class='right'>个人介绍</view> 
+          </view>
+
+          <text class='text' space="emsp">
+{{data.resume.introduction}}
+          </text>
+        </view>
+        <!-- 分割线 -->
+        <view class='hr' style="height:10rpx;"></view>
+       
+
+        <!-- 求职意向 -->
+        <view class='intention'>
+            <view class='title'>
+                <view class='left'><image mode='widthFix' src="{{iconpath}}yundian.png"></image></view>
+                <view class='center'>求职意向</view>
+                <view class='right'><navigator url="../intention/intention" hover-class="navigator-hover">编辑</navigator></view>
+            </view>
+            <view class='text'>
+                <view class='left'>{{data.resume.position}}</view>
+                <view class="right">{{data.resume.salary}}</view>
+            </view>
+        </view>
+        <!-- 分割线 -->
+        <view class='hr' style="height:10rpx;"></view>
+
+        <!-- 学习经历 -->
+
+        <view class='xuexi intention' >
+           <view class='title' style='width:94%;margin:0 auto;'>
+                <view class='left'><image mode='widthFix' src="{{iconpath}}yundian.png"></image></view>
+                <view class='center'>学习经历</view>
+          </view>
+
+          <view class='xlist' wx:for="{{data.learning}}" wx:for-item="val" wx:key="unique">
+                <view class='top'style='width:94%;margin:0 auto;'>
+                    <view class='xleft'>{{val.school}}</view>
+                    <view class='xright'><navigator url="../learning/learning?learning_id={{val.learning_id}}" hover-class="navigator-hover">编辑</navigator></view>
+                </view>
+                <view class='bottom' style='width:94%;margin:0 auto;'>
+                   <view class='xleft'>{{val.degree}} · {{val.certificate}}</view>
+                    <view class='xright'>{{val.schooldate}}</view>
+                </view>
+               <view class='hr' style='height:2rpx;'></view>
+           </view>
+
+        </view>
+        <!-- 添加简历 -->
+        <view class='add'>
+          <view>
+            <image mode='widthFix' src='{{iconpath}}add.png'></image>
+            <navigator url="../learning/learning" hover-class="navigator-hover">添加学习经历</navigator>
+          </view>
+        </view>
+         <!-- 分割线 -->
+        <view class='hr' style="height:10rpx;"></view>
+
+        <!-- 工作经历 -->
+        <view class='work'>
+            <view class='title'>
+                <view class='left'><image mode='widthFix' src='{{iconpath}}/yundian.png'></image></view>
+                <view class='center'>工作经历</view>
+                <view class='right'></view>
+            </view>
+
+            <view class='text' wx:for="{{data.work}}" wx:for-item="val" wx:key="unique">
+                <view class='ttitle'><view class='left'>{{val.company}}</view><view class='right'><navigator url="../work/work?work_id={{val.work_id}}" hover-class="navigator-hover">编辑</navigator></view></view>
+                <view class='ttitle2'>
+                    <view class='left'>{{val.position}}</view>
+                    <view class='right'>{{val.workdate}}</view>
+                </view>
+                <view class='body'>
+                    <text space="emsp">
+{{val.results}}
+                    </text>
+                </view>
+ 
+                <view class='hr' style='height:2rpx;'></view>
+            </view>
+
+        <!-- 添加简历 -->
+        <view class='add'>
+          <view>
+            <image mode='widthFix' src='{{iconpath}}add.png'></image> <navigator url="../work/work" hover-class="navigator-hover">添加工作经历</navigator>
+          </view>
+        </view>
+
+        </view>
+         <!-- 分割线 -->
+        <view class='hr' style="height:10rpx;"></view>
+
+        <!-- 健身相册 -->
+        <view class='photo'>
+            <view class='title'>
+                <view class='left'><image mode='widthFix' src='{{iconpath}}/yundian.png'></image></view>
+                <view class='right'>健身相册</view>
+            </view>
+            <view class='body'>
+                <view class='list' wx:for="{{photos}}" wx:for-item="val" wx:key="unique">
+                    <view>
+                       <image mode='widthFix' src="{{val}}" bindtap='delimage' data-src="{{val}}" ></image>
+                    </view>
+                </view>
+                <!-- 添加按钮 -->
+                 <view class='list' wx:if="{{photos.length < 6}}" bindtap='upload'>
+                   <image mode='widthFix' src="{{iconpath}}/add2.png"></image>
+                </view>
+            </view>
+        </view>
+         <view class='btop'>
+            <button class='button' bindtap='fabu' wx:if="{{switch_ == 0}}">发布简历</button>
+            <button class='button' bindtap='fabu' style="background:#dfdfdf;" wx:if="{{switch_ == 1}}">取消发布</button>
+        </view>
+    </view>
+</view>
+
+
+<view class='photosbody' bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" style='display:{{photosdisplay}};background-image:url({{background}})' bindtap='guanbi'>
+    <view class='top'>{{slecount}}/{{count}}</view>
+    <view class='del' catchtap="delete" ><image mode='widthFix' src='{{iconpath}}del.png'></image></view>
+</view>
